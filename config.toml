@@ -1,0 +1,25 @@
+esp_toml_version = 1.0
+firmware_images_url = "https://dra1ex.github.io/esp-launchpad/"
+
+supported_apps = ["esp-lamp", "esp-led", "esp-relay"]
+
+[esp-lamp]
+chipsets = ["ESP8266"]
+image.esp8266 = "esp8266_esp_lamp.bin"
+description = "esp-led-lamp for LED Strip (GPIO5)"
+readme.text = "https://raw.githubusercontent.com/DrA1ex/esp_led_lamp/main/README.md"
+
+[esp-led]
+chipsets = ["ESP32-C3", "ESP8266"]
+image.esp32-c3 = "esp32_c3_esp_led.bin"
+image.esp8266 = "esp8266_esp_led.bin"
+description = "esp-led for single LED"
+readme.text = "https://raw.githubusercontent.com/DrA1ex/esp_led/main/README.md"
+
+
+[esp-relay]
+chipsets = ["ESP32-C3", "ESP8266"]
+image.esp32-c3 = "esp32_c3_esp_relay.bin"
+image.esp8266 = "esp8266_esp_relay.bin"
+description = "esp-relay for 4-channel Relay (GPIO: 0, 1, 2, 3)"
+readme.text = "https://raw.githubusercontent.com/DrA1ex/esp_relay/main/README.md"
